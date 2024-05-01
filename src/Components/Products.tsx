@@ -12,7 +12,7 @@ const Products: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Products</Text>
+      <Text style={styles.title}>Product</Text>
       <FlatList
         data={products}
         renderItem={renderProduct}
