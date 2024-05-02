@@ -1,19 +1,23 @@
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
 import React from 'react';
-import FarmHeader from '../Components/FarmHeader';
-import FarmBody from '../Components/FarmBody';
+import FarmDetail from './FarmDetail';
 import FarmList from '../Components/FarmList';
-import TopBarkiers from '../Components/TopBarkiers';
+import FarmNearYou from '../Components/FarmNearYou';
+import SearchBar from '../Components/SearchBar';
+import TopFarms from './TopFarms';
+import Products from '../Components/Products';
 
 const Farm = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <FarmHeader />
-      <View style={styles.content}>
-        <FarmBody />
+    <SafeAreaView>
+      <ScrollView>
+        <FarmDetail />
+        <SearchBar />
+        <Products />
+        <TopFarms />
         <FarmList />
-        <TopBarkiers />
-      </View>
+        <FarmNearYou />
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -21,10 +25,4 @@ const Farm = () => {
 export default Farm;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  content: {
-    flex: 1,
-  },
 });

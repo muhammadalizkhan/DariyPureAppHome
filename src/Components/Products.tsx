@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, FlatList } from 'react-native';
 import { products, Product } from '../Data/data'; // Assuming 'Product' is the type for items in the 'products' array
-
 const Products: React.FC = () => {
   const renderProduct = ({ item }: { item: Product }) => (
     <View style={styles.product}>
@@ -9,7 +8,6 @@ const Products: React.FC = () => {
       <Text style={styles.productName}>{item.name}</Text>
     </View>
   );
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Product</Text>
@@ -27,7 +25,7 @@ const Products: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
+    marginTop: 8,
   },
   title: {
     fontSize: 25,
@@ -41,6 +39,7 @@ const styles = StyleSheet.create({
   product: {
     alignItems: 'center',
     marginHorizontal: 10,
+    marginTop: 10,
   },
   productImage: {
     width: 100,
