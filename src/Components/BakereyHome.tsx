@@ -3,7 +3,7 @@ import React from 'react'
 import { Bakeries, bakeries } from '../Data/data';
 
 
-const Bakerey = () => {
+const BakereyHome = () => {
     const renderItem = ({ item }: { item: Bakeries }) => (
       <View>
         <View style={styles.slides}>
@@ -15,7 +15,7 @@ const Bakerey = () => {
   
     return (
       <View style={styles.container}>
-          <Text style={styles.title}>Barkeries</Text>
+          <Text style={styles.title}>Top Barkeries</Text>
          <FlatList
           data={bakeries}
           renderItem={renderItem}
@@ -28,7 +28,7 @@ const Bakerey = () => {
     )
   }
 
-export default Bakerey
+export default BakereyHome
 
 const styles = StyleSheet.create({
     container: {

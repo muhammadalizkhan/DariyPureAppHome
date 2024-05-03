@@ -365,7 +365,7 @@ export type Bakeries = {
 const bakeries: Bakeries[] = [
     {
         id: 1,
-        name: 'Jalal Sons',
+        name: 'Gorment',
         rating: '4.5(200)',
         deliveryTime: '45 - 60 min',
         deliveryPrice: '199 PKR',
@@ -387,7 +387,7 @@ const bakeries: Bakeries[] = [
     },
     {
         id: 3,
-        name: 'Cakes and Bakes',
+        name: 'Cake & Bake',
         rating: '5(100)',
         deliveryTime: '20 - 30 min',
         deliveryPrice: '200 PKR',

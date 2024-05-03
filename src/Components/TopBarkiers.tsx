@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, FlatList, Dimensions, TouchableOpacity } from 'react-native';
-import { Bakeries, bakeries } from '../Data/data';
+import { TopBakeries, topbakeries } from '../Data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faLocationCrosshairs, faMoneyBill, faMotorcycle, faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 const TopBarkiers = () => {
-  const renderItem = ({ item }: { item: Bakeries }) => (
+  const renderItem = ({ item }: { item: TopBakeries }) => (
     <View style={styles.slide}>
       <Image style={styles.img} source={item.image} />
       <View style={styles.titleBody}>
@@ -57,7 +57,7 @@ const TopBarkiers = () => {
           </TouchableOpacity>
       </View>
       <FlatList
-        data={bakeries}
+        data={topbakeries}
         renderItem={renderItem}
         keyExtractor={(item) => item.id.toString()}
         contentContainerStyle={styles.flatListContent}

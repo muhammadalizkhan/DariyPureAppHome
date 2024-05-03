@@ -17,8 +17,8 @@ const FarmDetail = () => {
       <Text style={styles.Title}>Cattel and Dariy Farms</Text>
     </View>
   </View>
-  );
-};
+  )
+}
 
 export default FarmDetail;
 

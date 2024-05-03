@@ -1,22 +1,20 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-
 const AppBody = () => {
-
   return (
     <View style={styles.container}>
       <TouchableOpacity>
         <View style={[styles.box, styles.box1]}>
-          <Text style={styles.text}>Cattle Farms</Text>
+          <Text style={styles.label}>Cattle Farms</Text>
         </View>
       </TouchableOpacity>
       <View style={styles.column}>
         <View style={[styles.box, styles.box2]}>
-          <Text style={styles.text}>Dairy Products</Text>
+          <Text style={styles.label}>Dairy Product</Text>
         </View>
         <View style={[styles.box, styles.box3]}>
-          <Text style={styles.text}>Bakeries</Text>
+          <Text style={styles.label}>Bakeries</Text>
         </View>
       </View>
     </View>
@@ -29,8 +27,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   column: {
-    justifyContent: 'space-between',
     flexDirection: 'column',
+    justifyContent: 'space-between',
     padding: 10,
   },
   box: {
@@ -44,25 +42,30 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 10,
     backgroundColor: '#E9B0DF',
-    elevation: 8,
+    elevation: 5,
   },
   box2: {
     height: 90,
     width: 200,
-    backgroundColor: '#FFD3B4',
+    backgroundColor: '#E9B0DF',
     borderRadius: 10,
-    elevation: 8,
+    elevation: 5,
   },
   box3: {
     height: 100,
     marginTop: 10,
-    backgroundColor: '#F6F5F2',
+    backgroundColor: '#E9B0DF',
     borderRadius: 10,
     elevation: 5,
   },
-  text: {
+  label: {
     fontSize: 20,
     color: 'black',
+    position: 'absolute',
+    top: 10, // Adjust this value to position the text vertically
+    alignSelf: "flex-start",
+    fontFamily: 'sans-serif',
+    marginLeft: 10,
   },
 });
 
