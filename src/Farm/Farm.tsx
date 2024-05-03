@@ -10,11 +10,11 @@ import Products from '../Components/Products';
 const Farm = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView style={styles.container} >
         <FarmDetail />
         <SearchBar />
-        <Products />
         <TopFarms />
+        <Products />
         <FarmList />
         <FarmNearYou />
       </ScrollView>
@@ -25,4 +25,7 @@ const Farm = () => {
 export default Farm;
 
 const styles = StyleSheet.create({
+  container:{
+    backgroundColor: '#f3f3f3',
+  }
 });

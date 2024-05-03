@@ -53,6 +53,9 @@ const FarmList = () => {
 
     return (
         <View style={styles.container}>
+            <View>
+                <Text style={styles.title}>Farms Production</Text>
+            </View>
             <FlatList
                 data={cattleFarms}
                 renderItem={renderItem}
@@ -77,6 +80,12 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 10,
         flex: 1,
+    },
+    title: {
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: '#49243E',
+        marginLeft: 10,
     },
     name: {
         fontSize: 20,
@@ -107,6 +116,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginBottom: 20,
         borderRadius: 10,
+        marginTop:10,
         elevation: 5,
     },
     img: {

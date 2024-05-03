@@ -53,6 +53,7 @@ const TopFarms = () => {
   
     return (
       <View style={styles.container}>
+        <Text style={styles.title}>Top Cattel Farms</Text>
         <FlatList
           data={topCattelFarms}
           renderItem={renderItem}
@@ -76,7 +77,12 @@ export default TopFarms
 const styles = StyleSheet.create({
     container: {
       marginTop: 10,
-      height: 280,
+    },
+    title: {
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: '#49243E',
+        marginLeft: 10,
     },
     name: {
       fontSize: 20,
@@ -107,6 +113,7 @@ const styles = StyleSheet.create({
       marginLeft: 10,
       marginRight: 20,
       borderRadius: 10,
+      marginTop: 10,
     },
     img: {
       width: '100%',

@@ -1,17 +1,22 @@
-import { StyleSheet, Image, View, Text } from 'react-native';
-import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faChevronLeft, faHeart, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 const FarmDetail = () => {
   return (
-   <View>
-     <View style={styles.container}>
-      <Image 
-        style={styles.img}
-        source={require('../assets/Images/CattleFarmHeader.jpg')}
-      />
+    <View style={styles.container} >
+    <View style={styles.header}>
+      <FontAwesomeIcon icon={faChevronLeft} size={25} style={styles.icon} />
+      <View style={styles.rightIcons}>
+        <FontAwesomeIcon icon={faMagnifyingGlass} size={25} style={styles.icon} />
+        <FontAwesomeIcon icon={faHeart} size={25} style={styles.icon} />
+      </View>
     </View>
-    <Text style={styles.Title}>Cattel Farms</Text>
-   </View>
+    <View>
+      <Text style={styles.Title}>Cattel and Dariy Farms</Text>
+    </View>
+  </View>
   );
 };
 
@@ -19,22 +24,30 @@ export default FarmDetail;
 
 const styles = StyleSheet.create({
   container: {
-    height: 180,
-    elevation: 5,
-    overflow: 'hidden',
-    borderRadius: 25,
-  },
-  img: {
-    resizeMode: 'cover',
-    width: '100%',
-    height: '100%',
+    backgroundColor: '#49243E',
+    height: 100,
+    borderBottomRightRadius: 10,
+    borderBottomLeftRadius: 10,
   },
   Title:{
-    marginTop: 8,
-    fontSize: 25,
-    color: '#49243E',
-    marginLeft: 8,
+    fontSize: 20,
+    color: 'white',
     fontFamily: 'system-ui',
     fontWeight: 'bold',
+    marginLeft: 25,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  icon: {
+    color: 'white',
+    marginHorizontal: 10,
+  },
+  rightIcons: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
