@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Image, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 const AppBody = () => {
@@ -7,6 +7,12 @@ const AppBody = () => {
       <TouchableOpacity>
         <View style={[styles.box, styles.box1]}>
           <Text style={styles.label}>Cattle Farms</Text>
+          <Image
+            source={require('../assets/Icons/FilterIcon.png')}
+            width={100}
+            resizeMode='cover'
+            height={200}
+          />
         </View>
       </TouchableOpacity>
       <View style={styles.column}>
@@ -25,6 +31,9 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginTop: 10,
+  },
+  Image: {
+    fontSize: 10,
   },
   column: {
     flexDirection: 'column',
