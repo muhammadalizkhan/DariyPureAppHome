@@ -1,18 +1,13 @@
-import { StyleSheet, Image, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 const AppBody = () => {
+
   return (
     <View style={styles.container}>
       <TouchableOpacity>
         <View style={[styles.box, styles.box1]}>
           <Text style={styles.label}>Cattle Farms</Text>
-          <Image
-            source={require('../assets/Icons/FilterIcon.png')}
-            width={100}
-            resizeMode='cover'
-            height={200}
-          />
         </View>
       </TouchableOpacity>
       <View style={styles.column}>
@@ -52,7 +47,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#E9B0DF',
     elevation: 5,
-  },
+   },
   box2: {
     height: 90,
     width: 200,
@@ -68,8 +63,9 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   label: {
-    fontSize: 20,
+    fontSize: 23,
     color: 'black',
+    fontWeight: '700',
     position: 'absolute',
     top: 10, // Adjust this value to position the text vertically
     alignSelf: "flex-start",
