@@ -1,7 +1,7 @@
-import { StyleSheet, Text, Image, TextInput, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, Image, TextInput, View, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBars, faCartShopping, faHeart, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faBars, faCartShopping, faHeart, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
@@ -22,10 +22,7 @@ const Header = () => {
       <TouchableOpacity
         style={styles.iconContainer}
       >
-        <FontAwesomeIcon
-          icon={faHeart}
-          style={styles.icon}
-        />
+        <FontAwesomeIcon icon={faHeart} style={styles.icon}/>
         <FontAwesomeIcon icon={faCartShopping} style={styles.icon}/>
       </TouchableOpacity>
         </View>
@@ -44,7 +41,7 @@ const Header = () => {
           />
         </TouchableOpacity>
       </View>
-  </View>
+    </View>
   )
 }
 export default Header
